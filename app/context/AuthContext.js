@@ -1,3 +1,5 @@
+// Mark AuthContext as a client component
+"use client";
 import { useContext, createContext, useState, useEffect } from "react";
 import {
   signInWithPopup,
@@ -6,9 +8,6 @@ import {
   GoogleAuthProvider,
 } from "firebase/auth";
 import { auth } from "../firebase";
-
-// Mark AuthContext as a client component
-"use client";
 
 const AuthContext = createContext();
 
