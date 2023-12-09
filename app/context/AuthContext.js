@@ -7,6 +7,9 @@ import {
 } from "firebase/auth";
 import { auth } from "../firebase";
 
+// Mark AuthContext as a client component
+"use client";
+
 const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
