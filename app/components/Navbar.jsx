@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { UserAuth } from "../context/AuthContext";
 
+// Mark Navbar as a client component
+"use client";
+
 const Navbar = () => {
   const { user, googleSignIn, logOut } = UserAuth();
   const [loading, setLoading] = useState(true);
