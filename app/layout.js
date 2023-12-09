@@ -1,4 +1,4 @@
-//"use client";
+"use client"; // Assuming this is a pragma for Vercel's Next.js
 import Navbar from "./components/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
