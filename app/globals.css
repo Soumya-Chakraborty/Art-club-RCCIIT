@@ -1,27 +1,52 @@
+/* app\globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --text-color-rgb: 255, 255, 255; /* White text color */
+  --background-start-rgb: 72, 118, 255; /* Light blue background start color */
+  --background-end-rgb: 27, 43, 96; /* Dark blue background end color */
+  --neon-light-color: 173, 216, 230; /* Light blue neon color */
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: white) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --text-color-rgb: 0, 0, 0; /* Black text color for dark background */
+    --background-start-rgb: 255, 255, 255; /* White background start color */
+    --background-end-rgb: 255, 255, 255; /* White background end color */
+    --neon-light-color: 0, 191, 255; /* Neon blue color for dark background */
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--text-color-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    rgba(var(--neon-light-color), 0.5),
+    rgb(var(--background-end-rgb))
+  ) rgb(var(--background-start-rgb));
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(var(--text-color-rgb));
+}
+
+a {
+  color: rgb(var(--text-color-rgb));
+  text-decoration: underline;
+}
+
+a:hover {
+  color: rgb(var(--text-color-rgb));
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Add more specific styling or customize as needed */
