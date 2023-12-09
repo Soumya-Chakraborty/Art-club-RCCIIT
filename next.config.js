@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   // Remove the deprecated 'target' property
   // target: 'experimental-serverless-trace',
 
@@ -14,4 +15,4 @@ const nextConfig = {
   // Add other configurations as needed
 }
 
-module.exports = nextConfig;
+module.exports = nextConfig
