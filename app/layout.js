@@ -1,4 +1,6 @@
-"use client"; // Assuming this is a pragma for Vercel's Next.js
+// use client pragma for Vercel's Next.js
+"use client";
+
 // Importing components and styles
 import Navbar from "./components/Navbar";
 import "./globals.css";
@@ -28,4 +30,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-// Importing necessary modules and components
