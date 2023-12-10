@@ -19,9 +19,12 @@ export const AuthContextProvider = ({ children }) => {
 
   // Function to handle Google sign-in
   const googleSignIn = () => {
-    const provider = new GoogleAuthProvider();
-    signInWithPopup(auth, provider);
-  };
+  const provider = new GoogleAuthProvider();
+  signInWithPopup(auth, provider)
+    .catch((error) => {
+      console.error("Error during sign-in:", error.message);
+    });
+};
 
   // Function to handle log out
   const logOut = () => {
