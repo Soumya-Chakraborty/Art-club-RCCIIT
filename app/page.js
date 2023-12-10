@@ -33,7 +33,7 @@ export default function Home() {
 
       </div>
       <div className="md:flex-1 flex justify-center items-center">
-        <Image src={banner} alt="Contest Image" width={400} height={600} className="rounded-md shadow-lg"/>
+        <Image src={banner} alt="Contest Image" width={400} height={800} className="rounded-md shadow-lg"/>
       </div>
     </main>
   );
