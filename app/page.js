@@ -28,7 +28,7 @@ export default function Home() {
             So, pick up your tools, let your imagination run wild, and submit your masterpiece to the Animae Art Contest 2023. Join us in shaping the future of anime art, one stroke at a time!
           </span>
         </p>
-        <a href="http://localhost:3000/profile" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">  Register </a>
+        <a href="https://soumya-chakraborty.github.io/Art-club-RCCIIT/profile" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">  Register </a>
 
 
       </div>
